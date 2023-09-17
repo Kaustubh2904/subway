@@ -1,1 +1,8 @@
 this is the code for open cv controller for subway surfers 
+
+
+it has 3 functions one to check if the game is started or not 
+2nd to vheck left and right 
+3rd to chrck up and down 
+
+4th is to press appropriate keys based on movements
