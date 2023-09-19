@@ -261,10 +261,9 @@ def checkLeftRight(image, results, draw=False, display=False):
 
         # Display the output image.
         plt.figure(figsize=[10, 10])
-        plt.imshow(output_image[:, :, ::-1]);
-        plt.title("Output Image");
-        plt.axis('off');
-
+        plt.imshow(output_image[:, :, ::-1])
+        plt.title("Output Image")
+        plt.axis('off')
     # Otherwise
     else:
 
@@ -387,9 +386,9 @@ def checkJumpCrouch(image, results, MID_Y=250, draw=False, display=False):
 
         # Display the output image.
         plt.figure(figsize=[10, 10])
-        plt.imshow(output_image[:, :, ::-1]);
-        plt.title("Output Image");
-        plt.axis('off');
+        plt.imshow(output_image[:, :, ::-1])
+        plt.title("Output Image")
+        plt.axis('off')
 
     # Otherwise
     else:
@@ -545,7 +544,7 @@ while camera_video.isOpened():
                     horizontal_position == 'Center' and x_pos_index == 2):
 
                 # Press the left arrow key.
-                pyautogui.press('left')
+                pyautogui.press('a')
 
                 # Update the horizontal position index of the character.
                 x_pos_index -= 1
@@ -555,7 +554,7 @@ while camera_video.isOpened():
                     horizontal_position == 'Center' and x_pos_index == 0):
 
                 # Press the right arrow key.
-                pyautogui.press('right')
+                pyautogui.press('d')
 
                 # Update the horizontal position index of the character.
                 x_pos_index += 1
@@ -600,7 +599,7 @@ while camera_video.isOpened():
                     MID_Y = abs(right_y + left_y) // 2
 
                     # Move to 1300, 800, then click the left mouse button to start the game.
-                    pyautogui.click(x=1300, y=800, button='left')
+                    # pyautogui.click(x=1300, y=800, button='left')
 
                 # ----------------------------------------------------------------------------------------------------------
 
@@ -639,7 +638,7 @@ while camera_video.isOpened():
             if posture == 'Jumping' and y_pos_index == 1:
 
                 # Press the up arrow key
-                pyautogui.press('up')
+                pyautogui.press('w')
 
                 # Update the veritcal position index of  the character.
                 y_pos_index += 1
@@ -648,7 +647,7 @@ while camera_video.isOpened():
             elif posture == 'Crouching' and y_pos_index == 1:
 
                 # Press the down arrow key
-                pyautogui.press('down')
+                pyautogui.press('s')
 
                 # Update the veritcal position index of the character.
                 y_pos_index -= 1
